@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.next
+out
+.git
+.github
+.husky
+.vscode
+*.md
+!README.md
+.env
+.env.*
+!.env.example
+.DS_Store
+*.pem

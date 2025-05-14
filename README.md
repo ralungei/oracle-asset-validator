@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oracle GenAI Demo
 
-## Getting Started
+A Next.js application demonstrating integration with Oracle Generative AI service for asset validation.
 
-First, run the development server:
+## Features
+
+- GitHub repository file validation
+- Quality, security, structure, and template compliance checks
+- Interactive UI with modern components
+- Integration with Oracle AI APIs
+
+## Tech Stack
+
+- Next.js (React framework)
+- Material UI components
+- Oracle Generative AI APIs
+- Docker containerization
+
+## Quick Start
+
+### Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your Oracle credentials
+
+# Create keys directory and add your Oracle private key
+mkdir -p keys
+# Copy your private key to the keys directory
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Deployment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for Docker deployment instructions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `src/app/api/oracle-ai`: API route for Oracle AI integration
+- `src/app/components`: UI components
+- `src/app/hooks`: Custom React hooks
+- `src/services`: Service layer for API communication
+- `src/utils`: Utility functions
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary - All Rights Reserved
