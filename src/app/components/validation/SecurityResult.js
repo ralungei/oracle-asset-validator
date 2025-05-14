@@ -2,14 +2,12 @@ import { Box } from "@mui/material";
 import CollapsibleList from "../ui/CollapsibleList";
 
 export default function SecurityResult({ security }) {
-  // Comprobar si hay algún tipo de issue
   const hasAnyIssues =
     security.criticalIssues.length > 0 ||
     security.highIssues.length > 0 ||
     security.mediumIssues.length > 0 ||
     security.lowIssues.length > 0;
 
-  // Si no hay issues, mostrar mensaje de éxito
   if (!hasAnyIssues) {
     return (
       <CollapsibleList

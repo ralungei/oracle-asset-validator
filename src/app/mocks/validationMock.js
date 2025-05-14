@@ -1,5 +1,3 @@
-// src/app/mockValidationData.js
-
 export const mockValidationData = {
   status: "complete", // "idle", "in_progress", "complete", "error"
   level: {

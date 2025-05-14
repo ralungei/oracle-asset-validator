@@ -16,12 +16,10 @@ const SemicircularProgress = ({
   const rotation = 90 + (360 - maxAngle) / 2;
   const [progress, setProgress] = useState(0);
 
-  // Función para determinar si el color es hexadecimal
   const isHexColor = (color) => {
     return typeof color === "string" && color.startsWith("#");
   };
 
-  // Función para obtener el color correcto según si es del tema o hexadecimal
   const getColor = (theme, colorProp) => {
     return isHexColor(colorProp) ? colorProp : theme.palette[colorProp].main;
   };
@@ -59,7 +57,6 @@ const SemicircularProgress = ({
           value={progress}
           size={size}
           thickness={thickness}
-          // Modificado para usar color hexadecimal si se proporciona
           sx={{
             position: "absolute",
             top: 0,
@@ -71,7 +68,6 @@ const SemicircularProgress = ({
               transition: "stroke-dashoffset 1s ease-out",
             },
           }}
-          // Solo pasamos el prop color si es un color del tema
           color={isHexColor(color) ? undefined : color}
           {...props}
         />

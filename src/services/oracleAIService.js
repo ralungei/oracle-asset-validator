@@ -1,6 +1,3 @@
-/**
- * Service to interact with the Oracle AI API endpoint
- */
 export async function queryOracleAI(inputText) {
   try {
     const response = await fetch("/api/oracle-ai", {

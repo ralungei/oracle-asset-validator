@@ -91,7 +91,6 @@ export default function AIChat() {
     setFilePath(url);
     setRepoFilePath("");
 
-    // Verificar si parece una URL de GitHub válida
     if (url.includes("github.com") && url.includes("/blob/")) {
       setInput("");
       setExpanded(false);

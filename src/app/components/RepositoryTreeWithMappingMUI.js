@@ -4,9 +4,6 @@ import FolderIcon from "@mui/icons-material/Folder";
 import { Box, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 
-// -------------------------------------
-// Configuración de colores (ajústalos aquí)
-// -------------------------------------
 const colors = {
   iconHighlighted: "#4F46E5", // color de iconos destacados
   iconDefault: "#9CA3AF", // color de iconos por defecto
@@ -63,7 +60,6 @@ const RepositoryTree = ({ filePath }) => {
         let isHighlighted = false;
         let specificHighlighted = false;
 
-        // Lógica de resaltado
         if (type === "folder") {
           if (level < 4 && parts[level] === specific && specific) {
             isHighlighted = specificHighlighted = true;

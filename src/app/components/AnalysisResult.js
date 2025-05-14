@@ -15,7 +15,6 @@ import StructureResult from "./validation/StructureResult";
 import TemplateResult from "./validation/TemplateResult";
 
 export default function AnalysisResult({ input, filePath }) {
-  // const { state } = useValidation();
   const { state } = { state: mockValidationData };
 
   if (state.status === "idle") return null;

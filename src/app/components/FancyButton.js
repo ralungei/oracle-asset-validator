@@ -17,11 +17,9 @@ const FancyButton = ({
   const [isPressed, setIsPressed] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Use theme colors if no custom colors are provided
   const primary = primaryColor || theme.palette.primary.main;
   const secondary = secondaryColor || theme.palette.text.primary;
 
-  // Reset animation state when hover ends - FASTER TIMING
   useEffect(() => {
     if (!isHovered) {
       const timer = setTimeout(() => {
@@ -33,7 +31,6 @@ const FancyButton = ({
     }
   }, [isHovered]);
 
-  // Button hover and press animations
   const buttonVariants = {
     idle: { scale: 1 },
     hover: {
@@ -42,7 +39,6 @@ const FancyButton = ({
     pressed: { scale: 0.98, transition: { duration: 0.1 } },
   };
 
-  // Text morphing animation variants - MUCH FASTER
   const textVariants = {
     hidden: {
       opacity: 0,
@@ -61,7 +57,6 @@ const FancyButton = ({
     },
   };
 
-  // Circle expansion animation - MODIFIED for content width
   const circleVariants = {
     idle: {
       width: 10,
@@ -85,7 +80,6 @@ const FancyButton = ({
     },
   };
 
-  // Icon animation with morphing effect - FASTER
   const iconVariants = {
     hidden: {
       scale: 0.8,
