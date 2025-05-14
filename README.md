@@ -1,6 +1,6 @@
 # Oracle GenAI Demo
 
-A Next.js application demonstrating integration with Oracle Generative AI service for asset validation.
+A Next.js application that validates GitHub assets against Oracle standards and guidelines established by Alex Hodicke.
 
 ## Features
 
