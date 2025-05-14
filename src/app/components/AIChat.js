@@ -241,7 +241,7 @@ export default function AIChat() {
                       variant="caption"
                       sx={{ color: "#9A9A9A", lineHeight: 1.2 }}
                     >
-                      Validate with Alex Hodicke's
+                      Validate with Alex Hodicke&apos;s
                       <br />
                       template.
                     </Typography>
